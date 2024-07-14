@@ -1,0 +1,268 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+/*--------------------SIDE-BAR-------------------------------*/
+.sidebar{
+    background-color: black;
+    width: 340px;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+}
+.nav-opt{
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+.nav-opt:hover{
+    opacity: 1;
+}
+.nav-opt i{
+    font-size: 1.25rem;
+}
+.nav-opt a{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+}
+.option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lib-opt img{
+    height:1.25rem ;
+    width: 1.25rem;
+}
+.icons{
+    font-size: 1.25rem;
+    opacity: 0.7;
+    margin-right: 1rem;
+    display: flex;
+    cursor: pointer;
+}
+.icons i{
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+.icons i:hover{
+    opacity: 1;
+}
+.box{
+    height: 8rem;
+    background-color: #232323;
+    border-radius: 0.75rem;
+    margin: 0.75rem 0 1.75rem 0;
+    padding: 0.75rem 1rem;
+}
+.p1{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.p2{
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+.badge{
+    background-color: white;
+    border:none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+    cursor: pointer;
+}
+/*----------------------Main Content-------------------------------------*/
+.main-content{
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+}
+.sticky-nav{
+    display: flex;
+    position: sticky;
+    top: 0px;
+    background-color: #121212;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 1;
+}
+.sticky-nav-icon {
+    margin-left: 0.75rem;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.sticky-nav-icon:hover{
+    opacity: 1;
+}
+.sticky-nav-opt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sticky-nav-opt i:hover{
+    cursor: pointer;
+}
+.nav-item{
+    margin-right: 1rem;
+}
+.install-badge{
+    background-color: black;
+    color: white;
+}
+@media (max-width: 1000px){
+    .hide{
+        display: none;
+    }
+}
+.card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.card-title{
+    font-weight: 600;
+}
+.card-info{
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+.footer{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    
+}
+.line{
+    width: 90%;
+    height: 50%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+
+}
+
+/*--------------Music player----------------------*/
+.music-player{
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.album{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    padding:0 1rem 0 1rem
+}
+.album-icon{
+    margin: 40px;
+   
+}
+.album-icon i{
+    opacity: 0.7;
+}
+.album-icon i:hover{
+    opacity: 1;
+}
+
+.player{
+    width: 50%;
+}
+.player-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.control-icon{
+    height: 1rem;
+    margin-right: 1.75rem;
+    opacity: 0.7;
+}
+.control-icon:hover{
+    opacity: 1;
+}
+.progress-bar{
+    display: flex;
+    justify-content: space-evenly;
+}
+.playback-bar{
+    width: 60%;    
+}
+.extra-controls{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+}
+.music-icons i{
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    opacity: 0.7;
+}
+.music-icons i:hover{
+    opacity: 1;
+}
+.music-icons2{
+    margin-left: 10px;
+    
+}
+.music-icons2 i{
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    opacity: 0.7;
+}
+.music-icons2 i:hover{
+    opacity: 1;
+}
